@@ -7,9 +7,14 @@ import java.math.BigDecimal;
 import java.util.List;
 import kitchenpos.SpringServiceTest;
 import kitchenpos.domain.Product;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.DisplayNameGeneration;
+import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+@DisplayName("ProductService 클래스")
 class ProductServiceTest {
 
     @Nested
